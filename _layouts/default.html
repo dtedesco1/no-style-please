@@ -17,5 +17,9 @@
         <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
       {% endfor %}
     {% endif %}
+
+    {%-if site.footer -%}
+      {%-include footer.html-%}
+    {%-endif-%}
   </body>
 </html>
