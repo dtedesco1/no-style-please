@@ -6,9 +6,9 @@
       <div class="w">
         {{ content }}
 
-        {%-if site.theme_config.show_footer-%}
-          {%-include footer.html-%}
-        {%-endif-%}
+        {% if site.theme_config.show_footer %}
+          {% include footer.html %}
+        {% endif %}
       </div>
     </main>
 
